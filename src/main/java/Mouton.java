@@ -1,4 +1,5 @@
 public class Mouton extends Animal{
+
     public Mouton(int posx, int posy, int vitesse) {
         super(posx, posy, vitesse);
     }
@@ -15,7 +16,5 @@ public class Mouton extends Animal{
 
 
         }
-    }
-
 
 }

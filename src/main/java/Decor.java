@@ -1,25 +1,26 @@
-public class Vegetaux {
-    private TypeVegetaux type;
+public class Decor {
+    private TypeDecor type;
     private int posX;
     private int posY;
 
-    public enum TypeVegetaux {
+    public enum TypeDecor {
     HERBE,
     MARGUERITE,
-    CACTUS
+    CACTUS,
+    Rocher
 }
 
-    public Vegetaux(TypeVegetaux type, int posX, int posY) {
+    public Decor(TypeDecor type, int posX, int posY) {
         this.type = type;
         this.posX = posX;
         this.posY = posY;
     }
 
-    public TypeVegetaux getType() {
+    public TypeDecor getType() {
         return type;
     }
 
-    public void setType(TypeVegetaux type) {
+    public void setType(TypeDecor type) {
         this.type = type;
     }
 
