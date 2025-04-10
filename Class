@@ -15,3 +15,5 @@ Animal -> contient : position, Vitesse, vision, état(normal, chasse, fuite)
 Simulation -> contient la boucle principal du jeu
 
 jeu -> initialise la carte et demande au joueur les informations nécessaire
+
+Végétaux
