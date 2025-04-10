@@ -3,7 +3,9 @@ public class Mouton extends Animal{
         super(posx, posy, vitesse);
     }
 
-    public void seDeplacerSelonVegetaux(String typeVegetaux) {
+
+    //Override
+    public void seDeplacer(String typeVegetaux) {
         switch (typeVegetaux) {
             case "Herbe":
 
@@ -14,7 +16,6 @@ public class Mouton extends Animal{
 
         }
     }
-
 
 
 }
