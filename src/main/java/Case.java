@@ -1,7 +1,7 @@
 public class Case {
-    protected int x;
-    protected int y;
-    protected Decor contient;
+    private int x;
+    private int y;
+    private Decor contient;
 
     public Case(int x, int y, Decor contient) {
         this.x = x;
