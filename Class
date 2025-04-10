@@ -1,0 +1,17 @@
+Case -> contient : rocher, herbe, etc...
+                   position
+                   occupé ou non
+
+Labyrinthe -> contient une grille de case
+              gère l'affichage
+              place les entitées
+
+Animal -> contient : position, Vitesse, vision, état(normal, chasse, fuite)
+          méthodes :
+            -> manger
+            -> se déplacer
+          fait hérité a mouton et loup
+
+Simulation -> contient la boucle principal du jeu
+
+jeu -> initialise la carte et demande au joueur les informations nécessaire
