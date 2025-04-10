@@ -49,6 +49,4 @@ public abstract class Animal {
         this.posY += y;
     }
 
-
-
 }

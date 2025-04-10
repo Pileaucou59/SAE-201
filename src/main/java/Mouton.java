@@ -6,16 +6,23 @@ public class Mouton extends Animal {
 
 
     //Override
-    public void seDeplacer(String decor) {
-        switch (decor) {
-            case "Herbe":
+    public void seDeplacer(Decor d) {
+        switch (d) {
+            case HERBE:
+                // Ajouter le comportement pour HERBE
+                break;
 
-            case "Marguerite":
+            case MARGUERITE:
+                // Ajouter le comportement pour MARGUERITE
+                break;
 
-            case "Cactus":
+            case CACTUS:
+                // Ajouter le comportement pour CACTUS
+                break;
 
-
+            default:
+                // Ajouter un comportement par défaut si nécessaire
+                break;
         }
-
     }
 }
