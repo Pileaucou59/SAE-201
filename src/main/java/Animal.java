@@ -1,9 +1,8 @@
 public abstract class Animal {
-    private int posX;
-    private int posY;
-    private int vitesse;
-    private int vision;
-    private Etat etat;
+    protected Case caseActuelle;
+    protected int vitesse;
+    protected int vision;
+    protected Etat etat;
 
     public enum Etat {
         FUITE,
@@ -12,20 +11,19 @@ public abstract class Animal {
     }
 
 
-    public Animal(int positionx, int positiony, int vitesse) {
-        this.posX = positionx;
-        this.posY = positiony;
+    public Animal(Case c, int vitesse) {
+        this.caseActuelle = c;
         this.vision = 5;
         this.vitesse = vitesse;
         this.etat = Etat.NORMAL;
     }
 
-    public int getPositionx() {
-        return posX;
+    public Case getCaseActuelle() {
+        return caseActuelle;
     }
 
-    public int getPosY() {
-        return posY;
+    public void setCaseActuelle(Case caseActuelle) {
+        this.caseActuelle = caseActuelle;
     }
 
     public int getVitesse() {
@@ -44,9 +42,6 @@ public abstract class Animal {
         this.etat = etat;
     }
 
-    public void seDeplacer(int x, int y) {
-        this.posX += x;
-        this.posY += y;
-    }
+    public abstract void seDeplacer(int x, int y);
 
 }

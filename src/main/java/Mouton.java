@@ -1,13 +1,13 @@
 public class Mouton extends Animal {
 
-    public Mouton(int posx, int posy, int vitesse) {
-        super(posx, posy, vitesse);
+    public Mouton(Case c, int vitesse) {
+        super(c, vitesse);
     }
 
 
-    //Override
-    public void seDeplacer(Decor d) {
-        switch (d) {
+    @Override
+    public void seDeplacer(int x, int y) {
+        switch (this.caseActuelle.getContient()) {
             case HERBE:
                 // Ajouter le comportement pour HERBE
                 break;
@@ -24,5 +24,6 @@ public class Mouton extends Animal {
                 // Ajouter un comportement par défaut si nécessaire
                 break;
         }
+
     }
 }

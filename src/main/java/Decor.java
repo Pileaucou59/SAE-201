@@ -3,12 +3,7 @@ public class Decor {
     private int posX;
     private int posY;
 
-    public enum TypeDecor {
-    HERBE,
-    MARGUERITE,
-    CACTUS,
-    Rocher
-}
+
 
     public Decor(TypeDecor type, int posX, int posY) {
         this.type = type;
