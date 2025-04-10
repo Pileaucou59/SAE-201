@@ -1,8 +1,6 @@
-import java.util.List;
-
 public abstract class Animal {
-    private int positionx;
-    private int positiony;
+    private int posX;
+    private int posY;
     private int vitesse;
     private int vision;
     private Etat etat;
@@ -15,19 +13,19 @@ public abstract class Animal {
 
 
     public Animal(int positionx, int positiony, int vitesse) {
-        this.positionx = positionx;
-        this.positiony = positiony;
+        this.posX = positionx;
+        this.posY = positiony;
         this.vision = 5;
         this.vitesse = vitesse;
         this.etat = Etat.NORMAL;
     }
 
     public int getPositionx() {
-        return positionx;
+        return posX;
     }
 
-    public int getPositiony() {
-        return positiony;
+    public int getPosY() {
+        return posY;
     }
 
     public int getVitesse() {
@@ -47,8 +45,8 @@ public abstract class Animal {
     }
 
     public void seDeplacer(int x, int y) {
-        this.positionx += x;
-        this.positiony += y;
+        this.posX += x;
+        this.posY += y;
     }
 
 
