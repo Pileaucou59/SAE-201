@@ -1,9 +1,9 @@
 public class Case {
     private int x;
     private int y;
-    private Decor contient;
+    private TypeDecor contient;
 
-    public Case(int x, int y, Decor contient) {
+    public Case(int x, int y, TypeDecor contient) {
         this.x = x;
         this.y = y;
         this.contient = contient;
@@ -18,7 +18,7 @@ public class Case {
         return y;
     }
 
-    public Decor getContient() {
+    public TypeDecor getContient() {
         return contient;
     }
 
@@ -30,7 +30,7 @@ public class Case {
         this.y = y;
     }
 
-    public void setContient(Decor contient) {
+    public void setContient(TypeDecor contient) {
         this.contient = contient;
     }
 
