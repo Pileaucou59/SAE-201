@@ -131,4 +131,6 @@ public void afficherLabyrinthe() {
         this.cases = cases;
     }
 
+
+
 }
