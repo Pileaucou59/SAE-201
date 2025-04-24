@@ -1,6 +1,7 @@
 public abstract class Animal {
     protected Case caseActuelle;
     protected int vitesse;
+    protected int vision;
     protected Etat etat;
 
     public enum Etat {
@@ -12,6 +13,7 @@ public abstract class Animal {
 
     public Animal(Case c, int vitesse) {
         this.caseActuelle = c;
+        this.vision = 5;
         this.vitesse = vitesse;
         this.etat = Etat.NORMAL;
     }
@@ -26,6 +28,10 @@ public abstract class Animal {
 
     public int getVitesse() {
         return vitesse;
+    }
+
+    public int getVision() {
+        return vision;
     }
 
     public Etat getEtat() {

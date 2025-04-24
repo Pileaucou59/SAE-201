@@ -33,4 +33,6 @@ public class Labyrinthe {
         this.cases = cases;
     }
 
+
+
 }
