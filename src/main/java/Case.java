@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Case {
     private int x;
     private int y;
@@ -8,6 +10,17 @@ public class Case {
         this.y = y;
         this.contient = contient;
 
+    }
+
+    public TypeDecor randomTypeDecor() {
+        Random random = new Random();
+        int ran = random.nextInt(5) + 1;
+
+        return switch (ran) {
+            case 1 -> TypeDecor.CACTUS;
+            case 2 -> TypeDecor.MARGUERITE;
+            default -> TypeDecor.HERBE;
+        };
     }
 
     public int getX() {
